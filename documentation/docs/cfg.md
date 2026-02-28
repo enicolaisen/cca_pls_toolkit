@@ -31,7 +31,7 @@ hyperparameter values for grid search or number of PCA components. We strongly e
   
     name of the algorithm
     
-    [PCA-CCA](../background/#cca-with-pca-dimensionality-reduction-pca-cca) analysis is defined by `cfg.machine.name = cca` and `cfg.machine.param = {'PCAx' 'PCAy'}`
+    [PCA-CCA](../background/#cca-with-pca-dimensionality-reduction-pca-cca) analysis is defined by `cfg.machine.name = cca` and `cfg.machine.param.name = {'PCAx' 'PCAy'}`
 
     [RCCA](../background/#regularized-cca-rcca) finds a smooth solution between CCA and PLS using L2-norm regularization (see `cfg.machine.param.L2x` and `cfg.machine.param.L2y` below)
     
