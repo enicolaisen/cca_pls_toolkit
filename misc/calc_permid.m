@@ -79,7 +79,8 @@ for i=1:res.frwork.split.nall
         EBi = EBi(trid,2:end); % subsample training indexes
         
     elseif strcmp(cfg.stat.perm, 'train+test')
-        EBi(:,2) = EB(:,2) .* (trid+1); % add training/test separation
+        new_val = max(EB(:,2)) * 10;
+        EBi(:,2) = EB(:,2) .* (trid+new_val); % add training/test separation
     end
     
     % Permute
